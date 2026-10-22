@@ -1,0 +1,15 @@
+[project]
+name = "hyprmcp"
+version = "0.2.0"
+description = "MCP server for the Hyprland Wayland compositor, built on its Lua API"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.10,<3"]
+
+[project.scripts]
+hyprmcp = "hyprmcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
